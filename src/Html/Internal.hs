@@ -29,6 +29,15 @@ p_ = Structure . el "p" . escape
 h1_ :: String -> Structure
 h1_ = Structure . el "h1" . escape
 
+ul_ :: [Structure] -> Structure
+ul_ = Structure . el "ul" . concatMap (el "li" . show)
+
+ol_ :: [Structure] -> Structure
+ol_ = Structure . el "ol" . concatMap (el "li" . show)
+
+code_ :: String -> Structure
+code_ = Structure . el "pre" . escape
+
 -- Escaping rules from https://stackoverflow.com/a/7382028
 escape :: String -> String
 escape = concatMap $ \char -> case char of
