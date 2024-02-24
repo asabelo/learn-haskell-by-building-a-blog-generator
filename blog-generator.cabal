@@ -23,7 +23,8 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Html
+      Html.Internal
   other-modules:
       Paths_blog_generator
   hs-source-dirs:

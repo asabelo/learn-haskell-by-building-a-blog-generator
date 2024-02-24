@@ -16,3 +16,9 @@ and this project adheres to the
 
 - Remove license
 - Update readme and project info
+
+## Unreleased - 2024-02-24
+
+### Added
+
+- Html and Html.Internal modules for printing *very* simple HTML
