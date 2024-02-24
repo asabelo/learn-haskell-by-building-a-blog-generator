@@ -1,6 +1,9 @@
 module Main (main) where
-    
+
 import Html
 
+title = "<My> <page> <title>"
+content = append_ (h1_ title) (p_ "\"Hello\" & \'world\'!")
+
 main :: IO ()
-main = print $ html_ "My page title" $ append_ (h1_ "My page title") (p_ "Hello, world!")
+main = print $ html_ title content
