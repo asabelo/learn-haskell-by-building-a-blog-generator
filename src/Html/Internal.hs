@@ -20,8 +20,8 @@ newtype Structure = Structure String
 instance Show Structure where
     show (Structure s) = s
 
-append_ :: Structure -> Structure -> Structure
-append_ (Structure s1) (Structure s2) = Structure $ s1 <> s2
+instance Semigroup Structure where
+    (<>) (Structure s1) (Structure s2) = Structure $ s1 <> s2
 
 p_ :: String -> Structure
 p_ = Structure . el "p" . escape
