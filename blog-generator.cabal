@@ -25,6 +25,7 @@ library
   exposed-modules:
       Html
       Html.Internal
+      Markup
   other-modules:
       Paths_blog_generator
   hs-source-dirs:
