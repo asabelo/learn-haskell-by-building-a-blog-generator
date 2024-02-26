@@ -25,6 +25,9 @@ instance Show Structure where
 instance Semigroup Structure where
     (<>) (Structure s1) (Structure s2) = Structure $ s1 <> s2
 
+instance Monoid Structure where
+    mempty = Structure ""
+
 p_ :: String -> Structure
 p_ = Structure . el "p" . escape
 
