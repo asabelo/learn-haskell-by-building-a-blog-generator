@@ -22,3 +22,9 @@ and this project adheres to the
 ### Added
 
 - Html and Html.Internal modules for printing *very* simple HTML
+
+## Unreleased
+
+### Changed
+
+- Generalize Html.h1_ to Html.h_ which takes the heading level as a parameter

@@ -4,7 +4,7 @@ import Html
 
 title = "<My> <page> <title>"
 content =  
-    (h1_ title)
+    (h_ 1 title)
     <>
     (ol_ [ p_ "\"Hello\"", 
            p_ "&",

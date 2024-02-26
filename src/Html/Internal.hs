@@ -1,6 +1,8 @@
 module Html.Internal(module Html.Internal)
     where
 
+import Numeric.Natural ( Natural )
+
 html_ :: Title -> Structure -> Html
 html_ title structure =
     Html $ el "html"
@@ -26,8 +28,8 @@ instance Semigroup Structure where
 p_ :: String -> Structure
 p_ = Structure . el "p" . escape
 
-h1_ :: String -> Structure
-h1_ = Structure . el "h1" . escape
+h_ :: Natural -> String -> Structure
+h_ num = Structure . el ("h" <> show num) . escape
 
 ul_ :: [Structure] -> Structure
 ul_ = Structure . el "ul" . concatMap (el "li" . show)
