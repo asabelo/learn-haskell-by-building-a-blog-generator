@@ -25,6 +25,11 @@ and this project adheres to the
 
 ## Unreleased
 
+### Added
+
+- 'Convert' module to transform Markup.Structure into Html.Structure
+
 ### Changed
 
-- Generalize Html.h1_ to Html.h_ which takes the heading level as a parameter
+- Generalize Html.h1_ to Html.h_, which takes the heading level as a parameter
+- Html.Structure gets a Monoid instance
