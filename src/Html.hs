@@ -4,7 +4,7 @@ module Html(
         Structure,
         html_,
         p_,
-        h1_,
+        h_,
         append_,
         ul_,
         ol_,
