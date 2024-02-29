@@ -45,6 +45,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - blog-generator
+    - directory
 
 tests:
   blog-generator-test:
